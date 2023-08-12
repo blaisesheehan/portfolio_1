@@ -1,0 +1,79 @@
+
+/* margins = space around elements, outside of borders TRBL */
+/* padding = space around elements and within borders */
+/* height, width = do not include padding or borders or margin */
+/* inline -> no new line, only nec space, block -> new line, all space */
+
+body {
+    background-color: #4A4E69;
+    color: #F2E9E4;
+    font-family: "Helvetica", sans-serif;
+    margin-left: 50px;
+    
+}
+
+h1{
+    font-size:100px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size:60px;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 10px 0px 10px 10px;
+    width: 300px;
+}
+
+a:link, a:visited {
+    color:#F2E9E4;
+}
+
+
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 60px; /* Adjust this value based on your header's height */
+    left: 0;
+    width: 100%;
+  }
+
+section {
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    margin-bottom: 100px;
+  }
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+p {
+    font-size:30px;
+}
+
+#subtitle {
+    font-size:30px;
+    margin-top: 0px;
+
+
+}
+
+#landing {
+    margin-top: 400px;
+}
+
+img {
+    width: 330px;
+    height: 330px;
+    float:right;
+}

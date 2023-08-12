@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blaise Sheehan</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header>
+    <h1 id = "landing">hi,
+        my name is blaise!<img src="https://media.licdn.com/dms/image/D4E03AQHzCqR8-SGgzw/profile-displayphoto-shrink_800_800/0/1691421596254?e=1697068800&v=beta&t=-1GeIiWKSpiQumiNlS6XrluxGewjJ5xPafPmiHr737c" style = "width:0"></h1>
+    <h3 id="subtitle">a 2nd-year computer science student at the university of bristol</h3>
+  </header>
+
+  <section>
+    <h2>links</h2>
+    <a id = "subtitle" href="https://www.linkedin.com/in/blaisealette/">linkedin</a>
+    <a id ="subtitle" href="https://github.com/blaisesheehan?tab=repositories">github</a>
+  </section>
+
+  <section id="about">
+    <h2>about me</h2>
+    <p>i have special interests in innovative applications of modelling and machine learning tools in the realm of finance and natural sciences.</p>
+    <p>i also enjoy keeping up with the physical science world - in particular physics.</p>
+  </section>
+
+  <section id="projects">
+    <h2>projects</h2>
+    <p>scotland yard</p>
+    <p>workout creator</p>
+    <p>portfolio</p>
+  </section>
+
+  <section id="contact">
+    <h2>contacts</h2>
+    <p>blaisealette8@gmail.com | mq22858@bristol.ac.uk</p>
+  </section>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+      sections.forEach(section => {
+        const boundingBox = section.getBoundingClientRect();
+        const isVisible = boundingBox.top < window.innerHeight && boundingBox.bottom > 0;
+        
+        if (isVisible) {
+          section.classList.add("visible");
+        } else {
+          section.classList.remove("visible");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
